@@ -17,9 +17,10 @@ Add in settings:
 
 ## Settings example:
 
-* Written by **default**
-* Reading by **default** and **slave**
+* Written server by **default**
+* Reading server by **default** and **slave**
 
+Example:
 
     DATABASES = {
         'default': {
@@ -43,11 +44,11 @@ Add in settings:
 
 ## Advanced options
 
-Settings Variables
+Settings Variables:
 
 * ROUTERS_READ
-** Declares which server is reading
+* * Declares which server is reading
 * ROUTERS_WRITE
-** Declares which server is written
+* * Declares which server is written
 * ROUTERS_ALLOW_RELATION
-** Declares whether we consulted on more than one database, default is **True**
+* * Declares whether we consulted on more than one database, default is **True**
