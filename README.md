@@ -1,4 +1,4 @@
 django-routers
 ==============
 
-Django multiple databases, routers
+Django multiple databases, auto routers
