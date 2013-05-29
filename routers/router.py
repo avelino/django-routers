@@ -49,10 +49,6 @@ class AutoRouter(object):
         if not settings.ROUTERS_ALLOW_RELATION:
             return None
 
-        if django.get_version() >= "1.5":
-            obj1._state = obj1.state
-            obj2._state = obj2.state
-
         db_list = (settings.DATABASES.keys()[i] for i in range(0, self.index))
         if obj1._state.db in db_list and obj2._state.db in db_list:
             return True
