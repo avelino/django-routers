@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import random
 
 from django.conf import settings
 
 from .settings import ROUTERS_READ, ROUTERS_WRITE, ROUTERS_ALLOW_RELATION
-
-import django, random
-
 
 
 settings.ROUTERS_READ = ROUTERS_READ
