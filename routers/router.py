@@ -26,7 +26,7 @@ class AutoRouter(object):
         elif self.index == 1:
             return settings.DATABASES.keys()[0]
 
-        return random.choice([settings.DATABASES.keys()[i] for i in range(0, self.index)])
+        return random.choice(settings.DATABASES.keys())
 
     def db_for_write(self, model, **hints):
         """
