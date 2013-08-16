@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 
-version = '0.1'
+version = '0.2'
 description = u"Django multiple databases, auto routers"
 
 classifiers = ['Environment :: Plugins',
